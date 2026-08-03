@@ -1,11 +1,22 @@
+:root{
+    --hero_but_color: #161616;
+    --base_white_text:#FFFFFF;
+}
+
 body {
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    height: 66px;
 }
 
 nav {
 
     display: flex;
     height: 40px;
+
 }
 
 .burger,
@@ -18,6 +29,9 @@ nav {
     cursor: pointer;
     width: 100%;
     position: absolute;
+    text-align: center;
+    justify-items: center;
+    
 
 }
 
@@ -40,6 +54,9 @@ nav {
     height: 40px;
     position: relative;
     margin-left: 10px;
+    text-align: center;
+    align-items: center;
+    
 }
 
 .nav_list {
@@ -47,22 +64,34 @@ nav {
     flex-direction: column;
     position: absolute;
     left: 0;
-    top: 30px;
+    top: 50px;
     width: 100%;
-
+    list-style: none;
     padding: 10px 0;
     z-index: 100;
 }
 
-.nav_link{
+.nav_link {
     text-decoration: none;
+    color:var(--hero_but_color);
 }
+
+.contact{
+    border: var(--hero_but_color) 1px solid;
+    border-radius: 100px;
+    padding: 2px;
+    
+}
+
 #check_menu {
     display: none;
 }
 
 #check_menu:checked~.nav_list {
-    display: flex;
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
 
 }
 
@@ -73,10 +102,60 @@ nav {
 #check_menu:checked~.menu_butn .burger::before {
     top: 0;
     opacity: 0;
-    /* Ховаємо верхню лінію */
 }
 
 #check_menu:checked~.menu_butn .burger::after {
     top: 0;
     transform: rotate(90deg);
+}
+.burger_cont{
+    margin-top: 10px;
+    
+}
+.logo_cont{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+}
+.logo_cont img {
+    width: 24px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+.logo {
+    margin: 0 auto; 
+    font-size: 18px ;
+    align-self: center;
+}
+.hero{
+    text-align: center;
+}
+.hero_title{
+    text-align: center;
+    font-size: 32px;
+    margin: 20px;
+}
+.hero_text{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+}
+.hero_button{
+    color:var(--base_white_text) ;
+    background-color: var(--hero_but_color);
+    text-align: center;
+    border-radius: 100px;
+    width: 178px;
+    height: 50px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.hero_img{
+    width: 100%;
+    height: 300px;
+    background-image: url(./img/hero_pict.webp);
+    background-size: cover;
+    border-radius: 25px;
 }
