@@ -1,10 +1,12 @@
 :root{
     --hero_but_color: #161616;
     --base_white_text:#FFFFFF;
+    --cards_back_color: #D3F5FE;
 }
 
 body {
     margin: 0 auto;
+    padding: 0px 20px;
 }
 
 header {
@@ -158,4 +160,40 @@ nav {
     background-image: url(./img/hero_pict.webp);
     background-size: cover;
     border-radius: 25px;
+    margin-bottom: 60px;
+}
+.features{
+    text-align: center;
+}
+.features_title{
+    font-size: 26px;
+
+}
+.features_text{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.features_img{
+    height: 300px;
+    width: 100%;
+    background-image: url(./img/features_pict.webp);
+    background-size: cover;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    
+}
+.features_card{
+    background-color: var(--cards_back_color);
+    width: 90%;
+    border-radius: 25px;
+    justify-self: center    ;
+    padding: 21px 20px;
+    
+}
+.features_card p{
+    margin: 0 auto;
+}
+.img_text{
+    color: var(--base_white_text);
+    
 }
