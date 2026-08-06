@@ -6,7 +6,9 @@
     --manrope: 'Manrope', sans-serif;
     --date_color:#FBF1D6;
 }
-
+*{
+    font-family: var(--manrope);
+}
 body {
     margin: 0 auto;
     padding: 0px 20px;
@@ -117,6 +119,9 @@ nav {
     margin-top: 10px;
     
 }
+.logo_cont2{
+    display: none;
+}
 .logo_cont{
     display: flex;
     text-align: center;
@@ -184,7 +189,7 @@ nav {
     background-size: cover;
     border-radius: 16px;
     margin-bottom: 20px;
-    padding-top: 95%;
+    padding-top: 85%;
     display: flex;  
     
     
@@ -219,7 +224,7 @@ nav {
     padding-left: 20px;
     width: 100%;
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.403));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.492));
     justify-content: center;
 }
 .features_img2{
@@ -321,7 +326,95 @@ nav {
     font-weight: 700;
     height: 38px;
     line-height: 38px;
+    margin-bottom: 8px;
+}
+
+.offers_info{
+    width: 95%;
+    margin: 0 auto;
 }
 .offers_title{
     font-size: 18px;
+
+}
+
+.offers_text{
+    margin-bottom: 12px;
+}
+.offers_price{
+    margin-top: 4px;
+}
+.price_text{
+    margin: 0 auto  ;
+}
+
+@media (min-width: 768px){
+
+    body{
+        padding: 0 100px;
+    }
+.menu_butn {
+    display: none;
+}
+
+#check_menu {
+    display: none;
+    opacity: 0;
+}
+.nav_list{
+    display: flex;
+    top: 0;
+    flex-direction: row;
+    gap: 25%;
+    padding: 40px 100px 70px 100px;
+}
+.logo_cont{
+    display: none;
+}
+.logo_cont2{        
+    display: flex;
+    min-width: 100px;
+}
+.logo_cont2 img{
+    width: 20px;
+    height: 23px;
+}
+.column1{
+    grid-area: column1;
+    display: flex;
+    gap: 32px;
+    min-width: 292px;
+}
+.column2{
+    grid-area: column2;
+    display: flex;
+    gap: 32px;
+    min-width: 335px;
+}
+.hero{
+    margin-top: 70px ;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.hero_title_cont{
+    display: flex;
+}
+.hero_img{
+    height: 500px;
+    background-size: cover;
+}
+.hero_title{
+    font-size: 72px;
+    width: 80%;
+    text-align: start;
+    margin-right: 44px;
+}
+.hero_text{
+    font-size: 24px;
+    text-align: start;
+}
+.hero_text_cont{
+    width: 50%;
+}
+
 }
