@@ -302,6 +302,7 @@ nav {
     justify-content: center;
     margin-top: 12px;
     margin-bottom: 40px;
+    
 }
 .arrows{
     border: solid 1px var(--hero_but_color);
@@ -309,6 +310,7 @@ nav {
     height: 40px;
     border-radius: 100px;
     font-size: 24px;
+    cursor: pointer;
 }
 .offers_img{
     background-image: url(./img/offers_pict.webp);
@@ -346,6 +348,9 @@ nav {
 }
 .price_text{
     margin: 0 auto  ;
+}
+.offers_info2{
+    display: none;
 }
 
 @media (min-width: 768px){
@@ -413,8 +418,12 @@ nav {
     font-size: 24px;
     text-align: start;
 }
+.hero_button{
+    margin-left: 25px;
+}
 .hero_text_cont{
     width: 50%;
+    text-align: start;
 }
 .grid_features{
     display: flex;
@@ -471,5 +480,69 @@ nav {
 }
 .features{
     margin-bottom: 140px;
+}
+.mission{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: start;
+    gap: 120px;
+}
+.mission_cont{
+    padding-top: 9%;
+    max-width: 608px;
+}
+.mission_cont h2{
+    font-size: 48px;
+    
+}
+.mission_cont p{
+    font-size: 20px;
+}
+.mission_img{
+    height: 500px;
+    width: 600px;
+    margin-bottom: 200px;
+}
+.offers{
+    display: grid;
+    text-align: start;
+    grid-template-columns: repeat(2, 1fr);
+}
+.offers_info2{
+    display: block;
+}
+.offers_img{
+    width: 600px;
+    height: 400px;
+}
+.offers_img2{
+    background-image: url(./img/offers_pict2.webp); 
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+.arrows_cont{
+    text-align: center;
+    justify-self: end;
+    padding-right: 100px;
+    margin-bottom: 52px;
+}
+.date{
+    text-align: center;
+    justify-self: left;
+}
+.grid_cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.text_cont{
+    width: 435px;
+}
+.price_cont{
+    text-align: center;
+    padding-top: 45px;
+    padding-right: 2%;
 }
 }
